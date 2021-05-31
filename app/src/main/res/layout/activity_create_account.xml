@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#CC9C69"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-152dp">
+
+
+
+
+        <EditText
+            android:background="@drawable/shape_btn"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="     Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="20dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:background="@drawable/shape_btn"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="     Email"
+            android:layout_marginBottom="20dp"
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
+
+
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="     Phone"
+            android:background="@drawable/shape_btn"
+            android:inputType="number"
+            tools:ignore="TextFields"
+            android:layout_marginBottom="20dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:background="@drawable/shape_btn"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="     Password"
+            android:inputType="textPassword"
+            android:autofillHints="" />
+
+        <!-- Signup Button -->
+        <Button
+            android:background="@drawable/shape_btn1"
+            android:id="@+id/btn_create_account"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="create_account" />
+
+        <TextView
+            android:id="@+id/login_page"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="already_a_member_login"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
