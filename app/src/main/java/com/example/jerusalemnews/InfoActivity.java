@@ -8,17 +8,12 @@ import android.view.MenuItem;
 
 public class InfoActivity extends AppCompatActivity {
 
-    String ss = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
     }
-
-
-
-
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
